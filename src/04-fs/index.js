@@ -21,3 +21,5 @@ function copyFile(err, fileContent){
         });
     }
 }
+
+fs.readFile(scriptFile, copyFile);
