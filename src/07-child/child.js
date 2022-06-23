@@ -1,10 +1,10 @@
-console.log("child started working");
+console.log("child strarted working");
 
 process.send({ msg: "I am a child working" });
+
 process.on("message", (arg) => {
-  console.log("hola");
   if (arg.msg) {
-    console.log(`Received from parent ${arg.msg}`);
+    console.log(`Recived from parent ${arg.msg}`);
   }
   if (arg.close) {
     console.log("parent make me close");
